@@ -31,9 +31,9 @@ var INITMATRIX = function INITMATRIX() {
     var X = index * 15;
     canvas.getContext('2d').fillText(LETRA, X, y);
     y > 100 + Math.random() * 1e5 ? POSITION[index] = 0 : POSITION[index] = y + 15;
-    console.log(LETRA);
+    
   }.bind(this));
-  console.log(POSITION);
+  
 }.bind(this);
 
 setInterval(INITMATRIX, 60);
